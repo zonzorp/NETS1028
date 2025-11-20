@@ -1,6 +1,29 @@
 # Lab 09 Logging and Monitoring
 This unit provides an introduction on how to configure logging and monitoring software on Linux systems. Unless otherwise specfied, all activities in this lab are to be run on the main lab VM provided at the start of the semester.
 
+## Monitoring Tools
+
+### ss
+The ss tool is used primarily to view the status of network communication endpoints. It can be used to view active connections as well as listening or closing endpoints. The next few steps are intended to give you some practice running ss to examine your network connections. Common options are introduced. For each, ask your if yoou understand what it is showing you and whether anything that your machine is doing on the network is a surprise to you.
+1. Use ss to show the current active network connections on your VM.
+```bash
+ss -f inet
+```
+1. Run the same command, but show the results using numbers instead of names which can be helpful when name services are not necessarily reliable.
+```  bash
+ss -f inet -n
+```
+1. Try viewing the listening sockets.
+```  bash
+ss -f inet -l
+```
+1. Try viewing them including information about what is using them or providing them.
+```bash
+ss -f inet -lpn
+```
+1. Try that same command but with sudo.
+1. Review the options for the ss command ```man ss``` to get a feel for other ways you can use this tool.
+
 ## rsyslog
 1. Review the rsyslog.conf and if there are any, the rsyslog.d/*.conf config files in order to see what the default syslog configuration includes
 ```bash
