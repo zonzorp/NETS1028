@@ -24,6 +24,9 @@ ss -f inet -lpn
 1. Try that same command but with sudo.
 1. Review the options for the ss command ```man ss``` to get a feel for other ways you can use this tool.
 
+### iftop and nethogs
+Refer to [iftop-nethogs instructions](iftop-nethogs.md)
+
 ## Logging Tools
 ### rsyslog
 1. Review the rsyslog.conf and if there are any, the rsyslog.d/*.conf config files in order to see what the default syslog configuration includes
