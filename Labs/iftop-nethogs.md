@@ -102,12 +102,12 @@ Exercise 2: Monitor a Specific Application
 
 Start an application such as apt, a browser, or Steam, and track its bandwidth in nethogs.
 
-xercise 3: Log Network Activity
+Exercise 3: Log Network Activity
 
 Use iftop in batch mode:
-
+```bash
 sudo iftop -i <interface> -t > iftop_log.txt
-
+```
 Review the log file to examine connections over time.
 
 ⸻
