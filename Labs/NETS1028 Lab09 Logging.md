@@ -49,10 +49,5 @@ crontab -l
 exit
 ```
 
-## Loganalyzer
-Install the loganalyzer package
-Alternatively, download the latest version from the loganalyzer website and follow the instructions in the INSTALL file
-Once you have it installed, use your browser to open http://yourserver/loganalyzer and see what you can do with it.
-
 ## Grading
 This lab is for practice to reinforce learning. There are no marks for it, and there is nothing to hand in.
